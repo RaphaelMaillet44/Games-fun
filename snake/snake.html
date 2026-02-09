@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Snake Web</title>
+    <title>Snake</title>
     <style>
         body { display: flex; flex-direction: column; align-items: center; background: #2c3e50; color: white; font-family: sans-serif; }
         canvas { border: 5px solid #ecf0f1; background: #000; }
@@ -12,5 +12,15 @@
     <h1>Snake Retro</h1>
     <div id="score">Score : 0</div>
     <canvas id="snakeGame" width="400" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById("snakeGame");
+        const ctx = canvas.getContext("2d");
+        const box = 20;
+
+        let snake = [{ x: 9 * box, y: 10 * box }]; // Le serpent commence avec un seul segment
+        let food = { x: 5 * box, y: 5 * box };     // Position de départ de la nourriture
+        let d;                                     // Direction
+    </script>
 </body>
 </html>
