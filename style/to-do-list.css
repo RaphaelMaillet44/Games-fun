@@ -1,4 +1,38 @@
-.task {
-    width: 30ch;
-    height: auto;
+span {
+    position: relative;
+    top: 1ch;
+}
+input#check {
+    position: relative;
+    bottom: 1.4ch;
+    width: 25px;
+    height: 25px;
+}
+@media screen and (min-width: 1200px) {
+    .task {
+        width: 40ch;
+        height: auto;
+        padding: 3ch;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .task {
+        width: 35ch;
+        height: auto;
+        padding: 3ch;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .task {
+        width: 25ch;
+        height: auto;
+        padding: 3ch;
+    }
+}
+@media screen and (max-width: 767px) {
+    .task {
+        width: 50ch;
+        height: auto;
+        padding: 3ch;
+    }
 }
