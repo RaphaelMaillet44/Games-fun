@@ -18,8 +18,9 @@
         <!-- Les tâches seront chargées dynamiquement ici -->
     </div>
     <div class="row justify-content-center mt-4">
+        <h4 class="col-12 text-center fw-bold" id="progress-text">Progression: 0/27</h4>
         <div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
     </div>
 </div>
@@ -60,16 +61,22 @@
 
         // Charger les tâches depuis les données intégrées
         let task = '';
+        let progressbar = document.querySelector('.progress-bar');
         tasksData.forEach((element, index) => {
             task += `<div class="task col-lg-4 col-md-6 col-sm-6 col-xs-12 shadow m-1 p-3 d-flex justify-content-center"><span class="p-3"><input type="checkbox" name="check" id="check" onchange="updateProgress(this)"></span><span><h3>${element.tache}</h3></span></div>`;
         });
         container.innerHTML = task;
+        let counter = document.getElementById("progress-text");
         function updateProgress(checkbox) {
             console.log("Checkbox state changed:", checkbox.checked);
             if (checkbox.checked) {
                 progress += 1;
+                progressbar.style.width = progress * 3.703703703703704 + '%';
+                counter.innerHTML = "Progression: " + progress + "/27";
             } else {
                 progress -= 1;
+                progressbar.style.width = progress * 3.703703703703704 + '%';
+                counter.innerHTML = "Progression: " + progress + "/27";
             }
             console.log("Current progress:", progress);
         }
