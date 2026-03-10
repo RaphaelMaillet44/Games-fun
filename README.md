@@ -23,8 +23,9 @@
 
 > *Organisation*: \
     -**Une branch par fonctionnalité**. \
-    **Branch:** 
 
-    **-LifeCheck**
-    **-FindButton**
-    **-Clicker**
+# Branch:
+
+## -LifeCheck
+## -FindButton
+## -Clicker
