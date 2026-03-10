@@ -25,6 +25,6 @@
     -**Une branch par fonctionnalité**. \
     **Branch:** 
 
-    -*LifeCheck* 
-    -*FindButton* 
-    -*Clicker* 
+    **-LifeCheck**
+    **-FindButton**
+    **-Clicker**
