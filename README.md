@@ -8,7 +8,7 @@
     -**Loris Duval** (*LorisDuval*) \
     -**Raphaël Maillet** (*RaphaelMaillet44*)\
     -**Paul Wafellman** (*Wafellman*) \
-    -**Robin Loviny** (*RobinLR-Study*) \
+    -**Robin Loviny** (*RobinLR-Study*) 
 
 > *Fonctionnalités*: \
     -**Jeux de To-Do List des tâches à réaliser dans la vie.** \
@@ -19,12 +19,12 @@
     -**CSS** \
     -**JavaScript** \
     -**PHP** \
-    -**MySQL** \
+    -**MySQL** 
 
 > *Organisation*: \
     -**Une branch par fonctionnalité**. \
-    **Branch:** \
+    **Branch:** 
 
-    -*LifeCheck* \
-    -*FindButton* \
-    -*Clicker* \
+    -*LifeCheck* 
+    -*FindButton* 
+    -*Clicker* 
