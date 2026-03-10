@@ -24,6 +24,18 @@
         btn.className = `btn btn-${color} btn-custom`;
         btn.textContent = `Btn ${i}`;
         container.appendChild(btn); 
+
+        btn.onclick = function() {
+            if (i === winningNumber) {
+                
+                alert("Bien joué ! Tu as trouvé le bon bouton !");
+                location.reload(); 
+            } else {
+                
+                this.style.opacity = "0.2";
+                this.style.pointerEvents = "none"; 
+            }
+        };
     }
 </script>
 </body>
