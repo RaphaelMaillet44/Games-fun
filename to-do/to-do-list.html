@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life To Do List</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/to-do-list.css">
+    <link rel="stylesheet" href="../style/to-do-list.css">
 
 </head>
 <body>
 <nav class="navbar navbar-light bg-light shadow p-2">
-    <span><a href="index.html"><h1 class="h1">MMI.FUN</h1></a></span>
+    <span><a href="../index.html"><h1 class="h1">MMI.FUN</h1></a></span>
   <span class="mx-auto flex-grow"><h1>Life To Do List</h1></span>
 </nav>
 <div class="container mt-4">
     <div class="row justify-content-center" id="tasks-container">
-        <!-- Les tâches seront chargées dynamiquement ici -->
     </div>
     <div class="row justify-content-center mt-4">
         <h4 class="col-12 text-center fw-bold" id="progress-text">Progression: 0/27</h4>
@@ -28,7 +27,6 @@
         const container = document.getElementById("tasks-container");
         let progress = 0;
 
-        // Données des tâches intégrées directement pour éviter les problèmes CORS
         const tasksData = [
             {"tache": "Naître"},
             {"tache": "Faire ses premiers pas"},
@@ -58,12 +56,10 @@
             {"tache": "Se mettre en couple"},
             {"tache": "Se marier"}
         ];
-
-        // Charger les tâches depuis les données intégrées
         let task = '';
         let progressbar = document.querySelector('.progress-bar');
         tasksData.forEach((element, index) => {
-            task += `<div class="task col-lg-4 col-md-6 col-sm-6 col-xs-12 shadow m-1 p-3 d-flex justify-content-center"><span class="p-3"><input type="checkbox" name="check" id="check" onchange="updateProgress(this)"></span><span><h3>${element.tache}</h3></span></div>`;
+            task += `<div class="task col-lg-4 col-md-6 col-sm-6 col-xs-12 shadow m-1 p-3 "><span class="class="checkbox-wrapper" p-3"><input type="checkbox" name="check" id="check"  onchange="updateProgress(this)"></span><span><h3>${element.tache}</h3></span></div>`;
         });
         container.innerHTML = task;
         let counter = document.getElementById("progress-text");

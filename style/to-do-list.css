@@ -2,9 +2,15 @@ span {
     position: relative;
     top: 1ch;
 }
+.task {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
 input#check {
     position: relative;
-    bottom: 1.4ch;
+    bottom: 0.5ch;
     width: 25px;
     height: 25px;
 }
